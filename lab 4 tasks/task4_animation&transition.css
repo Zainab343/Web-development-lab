@@ -1,0 +1,93 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    gap: 15px;
+}
+
+
+.fade-btn {
+    padding: 12px 20px;
+    background-color: teal;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.5s ease-in-out;
+}
+.fade-btn:hover {
+    opacity: 1;
+}
+
+/* Bounce Animation */
+.bounce-btn {
+    padding: 12px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+.bounce-btn:hover {
+    transform: translateY(-10px);
+}
+
+/* Shake Effect */
+.shake-btn {
+    padding: 12px 20px;
+    background-color: darkred;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+.shake-btn:hover {
+    animation: shake 0.5s ease-in-out infinite;
+}
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+}
+
+/* Pulsing Animation */
+.pulse-btn {
+    padding: 12px 20px;
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: pulse 1s infinite alternate;
+}
+@keyframes pulse {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); }
+}
+
+/* Typing Text Animation */
+.typing-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: darkblue;
+    border-right: 3px solid darkblue;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s steps(20) forwards, blink 0.5s infinite alternate;
+}
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+@keyframes blink {
+    50% { border-color: transparent; }
+}

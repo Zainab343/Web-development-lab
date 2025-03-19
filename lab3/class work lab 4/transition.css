@@ -1,0 +1,87 @@
+.transition{
+    width: 100px;
+    height: 100px;
+    background-color:beige;
+    transition: width 2s;
+}
+.transition:hover{
+    width: 300px;
+}
+.t1
+{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(6, 57, 122);
+    transition: width 2s,height 4s, border-radius 100%;
+}
+.t1:hover{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+.color-btn{
+    padding: 12px 20px;
+    background-color:chocolate;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.color-btn:hover{
+    background-color:blanchedalmond ;
+}
+.scale-btn {
+    padding: 12px 20px;
+    background-color:chocolate;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.scale-btn:hover{
+    transform: scale(1,2);
+}
+.rotate-btn{
+    padding: 12px 20px;
+    background-color: brown;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+.rotate-btn:hover{
+    transform: rotate(360deg);
+}
+.slide-btn{
+    padding: 12px 20px;
+    background-color: blueviolet;
+    color: wheat;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+.slide-btn::after{
+    content:"->";
+    position: absolute;
+    right: -20px;
+    transition: right 0.3s ease;
+}
+.slide-btn:hover::after{
+    right: 10px;
+}
+.border-btn{
+padding: 12px 20px;
+background-color: #e91e63;
+color: white;
+border: 2px solid transparent;
+border-radius: 5px;
+cursor: pointer;
+transition: border 0.3s ease;
+}
+.border-btn:hover{
+    border: 2px solid white;
+}
